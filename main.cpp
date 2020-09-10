@@ -52,7 +52,7 @@ int main() {
     std::cin >> d;
     short z;
     z = f ^ ((~c) & e) | d;
-    std::cout << std::hex << std::showbase << z << "\n";
+    std::cout << std::hex << std::showbase << std::setw(8) << std::internal << std::setfill('0') << z << "\n";
     std::cout << "The end of the task 5.\n" << "Goodbye!" << std::endl;
     return 0;
 }
